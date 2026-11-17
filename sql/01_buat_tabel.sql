@@ -1,0 +1,12 @@
+USE arsip_materi;
+
+DROP TABLE IF EXISTS materi;
+
+CREATE TABLE IF NOT EXISTS materi (
+    id INT AUTO_INCREMENT PRIMARY KEY,
+    judul VARCHAR(255) NOT NULL,
+    mata_kuliah VARCHAR(100) NOT NULL,
+    pertemuan INT NOT NULL,
+    tautan VARCHAR(255) NULL,
+    created_at TIMESTAMP DEFAULT CURRENT_TIMESTAMP
+);
